@@ -1,21 +1,25 @@
 import React,{Component} from 'react';
 import PropTypes from "prop-types";
-import {Icon,Avatar,Card} from "antd";
-import New from "./new.jpg";
-import Old from "./old.jpg";
+//import {Link} from "react-router-dom"
+import {Button} from "antd";
 import './App.css';
 
 class Room extends Component{
-  static propTypes = {
-    room:PropTypes.object.isRequired,
+  static propTypes = { 
+    classroom:PropTypes.object.isRequired,
   }
+
+  handleButtonClick = () => {
+    //console.log(this.props.classroom)
+    this.props.RoomonClick(this.props.classroom.classroom_id)
+  }
+
   render = () => {
-    let {Meta} = Card;
     return(
       <div className="room">
-          <Card hoverable className="card" cover={<img alt="example" src={New} />}>
-            <Meta avatar={<Avatar className="avatar">45</Avatar>} title="203教室" />
-          </Card>
+        <Button onClick={this.handleButtonClick} className={this.props.classroom.canuse?"room-button-on":"room-button-off"}>
+          {this.props.classroom.classroom}
+        </Button>
       </div>
     )
   }

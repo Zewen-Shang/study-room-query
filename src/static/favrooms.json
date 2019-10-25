@@ -1,0 +1,30 @@
+{
+    "error_code":-1,
+    "message": "success",
+    "data":[
+        {
+            "classroom_ID":"04001",
+            "classroom":"4楼101",
+            "capacity":83,
+            "building":"04楼"
+        },
+        {
+            "classroom_ID":"04002",
+            "classroom":"4楼103",
+            "capacity":83,
+            "building":"04楼"
+        },
+        {
+            "classroom_ID":"04003",
+            "classroom":"4楼113",
+            "capacity":40,
+            "building":"04楼"
+        },
+        {
+            "classroom_ID":"51005",
+            "classroom":"51楼五层",
+            "capacity":100,
+            "building":"综合楼"
+        }
+    ]
+}

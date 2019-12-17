@@ -3,12 +3,12 @@ import {Icon} from "antd";
 class FavItem extends Component{
     //点击左侧时，打开课表
     left = () => {
-        console.log(this.props.item);
-        this.props.left(this.props.item.classroom_ID);
+        this.props.left(this.props.item.classroom);
     }
 
     right = () => {
-        this.props.right(this.props.item.on,this.props.item.classroom_id);
+        console.log(this.props.item.classroom_ID); 
+        this.props.right(this.props.item.on,this.props.item.classroom_ID);
     }
     render = () => {
         return(

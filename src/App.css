@@ -1,8 +1,22 @@
+@font-face{
+  font-family: "SiYuan";
+  src: url("./static/SourceHanSansCN-Normal.ttf");
+}
+
+body{
+  font-family: "SiYuan" !important;
+}
+
 
 a:link {color:white;}		/* 未被访问的链接 */
 a:visited {color:white;}	/* 已被访问的链接 */
 a:hover {color:white;}	/* 鼠标指针移动到链接上 */
 a:active {color:white;}	/* 正在被点击的链接 */
+
+img{
+  width: 100%;
+  padding: 10px;
+}
 
 .header{
   width: 100%;
@@ -14,7 +28,7 @@ a:active {color:white;}	/* 正在被点击的链接 */
   height: 100%;
   padding: 0 20px;
   font-size: 24px;
-  background-color: #5adcec !important;
+  background-color: #008fd1 !important;
   color: white;
 }
 .header-item{
@@ -35,6 +49,19 @@ a:active {color:white;}	/* 正在被点击的链接 */
   background-color: #f8f8f8;
 }
 
+.icon-top{
+  font-size: 24px;
+}
+
+.search-top{
+  margin: 0px -10px !important;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow:0.2px 0.2px 0.5px #333333;
+  font-size: 16px;
+}
+
 .search-container{
   margin: 10px auto;
   padding: 5px;
@@ -45,8 +72,8 @@ a:active {color:white;}	/* 正在被点击的链接 */
   width: 100%;
 }
 
-.search-courseselecter{
-  width: 100%;
+.search-select-button{
+  margin-top: 5px;
 }
 
 .search-buildlist-container{
@@ -61,8 +88,12 @@ a:active {color:white;}	/* 正在被点击的链接 */
 .search-button{
   width: 200px;
   height: 50px !important;
-  background-color:#5adcec !important;
+  background-color:#008fd1 !important;
   color: white !important;
+}
+
+.search-radio{
+  margin-top:10px !important;
 }
 
 .build-container{
@@ -80,40 +111,49 @@ a:active {color:white;}	/* 正在被点击的链接 */
 
 .build-container-on{
   border-color: white;
-  background-color:#5adcec;
+  background-color:#008fd1;
   color: white;
 }
 
 .footer{
-  background-color: #5adcec !important;
+  background-color: #008fd1 !important;
   color: white !important;
   text-align: center;
 }
 
 .list{
   width: 100%;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
-.room-button{
-  background-color: #5adcec !important;
-  color: white !important;
-  width: 100% !important;
-  margin: 5px;
+.buildlist{
+  min-height: 300px;
 }
 
 .room-button-on{
-  background-color: #5adcec !important;
+  background-color: #008fd1 !important;
   color: white !important;
   width: 100% !important;
   margin: 5px;
+  padding: 0 3px !important;
+}
+
+.room-button-on span{
+  text-align: center !important;
+  width: 100%;
+}
+
+.room-button-off span{
+  text-align: center !important;
+  width: 100%;
 }
 
 .room-button-off{
   background-color: white !important;
-  color: #5adcec !important;
+  color: #008fd1 !important;
   width: 100% !important;
   margin: 5px;
+  padding: 0 3px !important;
 }
 
 .result-title{
@@ -143,4 +183,9 @@ a:active {color:white;}	/* 正在被点击的链接 */
   margin-top: 35px;
   margin-left: 5px;
   float: right;
+}
+
+.build{
+  text-align: center;
+  padding: 5px;
 }
